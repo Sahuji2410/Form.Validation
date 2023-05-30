@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="validate.css" />
+  </head>
+
+  <body>
+    <h1><u> Registration Form!</u></h1>
+    <form
+      aciton="/myaction.php"
+      name="myForm"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <div class="formdesign" id="name">
+        <input type="text" name="fname" placeholder="FirstName" required /><b
+          ><span class="formerror"> </span
+        ></b>
+      </div>
+      <div class="formdesign" id="name">
+        <input type="text" name="fmname" placeholder="MiddleName" required /><b
+          ><span class="formerror"> </span
+        ></b>
+      </div>
+      <div class="formdesign" id="name">
+        <input type="text" name="flname" placeholder="LastName" required /><b
+          ><span class="formerror"> </span
+        ></b>
+      </div>
+      <div class="formdesign" id="email">
+        <input type="email" name="femail" placeholder="Email" required /><b
+          ><span class="formerror"> </span
+        ></b>
+        <div class="formdesign">
+          <label for="country-select" class="fcontent">Select country:</label>
+          <select id="country-select" onclick="phonenumber()" style="width:190px;
+          height: 25px;
+          border-radius: 5px;
+          margin-left: 63px;">
+            <option value="">--Please select a country--</option>
+            <option value="india">India</option>
+            <option value="nepal">Nepal</option>
+          </select>
+          <br>
+          <div>
+              <label for="phone-input" class="content">Phone number:</label>
+            <input type="text" id="code-input" name="code" readonly class="cco" style="width: 30px; margin-left:57px">
+            <input type="number" id="phone-input" name="phone" minlength="10" maxlength="10" class="pnu">
+          </div>
+      </div>
+
+      <div class="formdesign" id="pass">
+        <input
+          type="password"
+          name="fpass"
+          placeholder="Password"
+          required
+        /><b> <span class="formerror"></span></b>
+      </div>
+
+      <div class="formdesign" id="cpass">
+        <input
+          type="password"
+          name="fcpass"
+          placeholder="Confirm Password"
+          required
+        /><b><span class="formerror"></span></b>
+      </div>
+
+      <input class="but" type="submit" value="Submit" />
+    </form>
+  </body>
+  <script src="validate.js"></script>
+</html>

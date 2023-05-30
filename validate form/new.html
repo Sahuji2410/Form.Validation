@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Professional Registration Form</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <h2>Professional Registration Form</h2>
+  <form id="registrationForm" onsubmit="validateForm(event)">
+    <label for="First Name">Full Name:<span class="required">*</span>:</label>
+    <input type="text" id="fullName" name="FirstName" placeholder="First Name:" required><br><br>
+
+    <label for="First Name">Last Name:<span class="required">*</span>:</label>
+    <input type="text" id="fullName" name="LastName" placeholder="Last Name" required><br><br>
+
+    <label for="email">Email<span class="required">*</span>:</label>
+    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+    <label for="password">Password<span class="required">*</span>:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirmPassword">Confirm Password<span class="required">*</span>:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+    <!-- <label for="phone">Phone Number<span class="required">*</span>:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br> -->
+
+    <div class="form-group">
+      <label for="country-select" class="content">Select country:</label>
+      <select id="country-select" onclick="phonenumber()" style="width:190px;
+      height: 25px;
+      border-radius: 5px;
+      margin-left: 63px;">
+        <option value="">-Select a country--</option>
+        <option value="india">India</option>
+        <option value="nepal">Nepal</option>
+        <option value="china">China</option>
+      </select>
+      <br>
+      <div>
+          <label for="phone-input" class="content">Phone number:</label>
+        <input type="text" id="code-input" name="code" readonly class="cco" style="width: 30px; margin-left:57px">
+        <input type="number" id="phone-input" name="phone" minlength="10" maxlength="10" class="pnu">
+      </div>
+  </div>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <script src="new.js">
+    
+  </script>
+</body>
+</html>

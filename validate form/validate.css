@@ -1,0 +1,56 @@
+body {
+    padding: 10px 50px;
+    background-color: rgb(168, 148, 171);
+}
+
+.formdesign {
+    font-size: 20px;
+
+}
+
+.formdesign input {
+    width: 50%;
+    padding: 12px 20px;
+    border: 1px solid rgb(92, 122, 145);
+    margin: 14px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.formerror {
+    color: red;
+}
+
+.but {
+    background-color: rgb(75, 84, 84);
+    color: aliceblue;
+    border-radius: 9px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    margin: 22px 20px;
+    border: none;
+    cursor:pointer;
+}
+.fphoneclass select{
+    width: 7%;
+    padding: 11px ;
+    margin: 14px;
+    border-radius: 4px;
+    border: 1px solid rgb(5, 142, 247);
+}
+/* .phonenumber{
+    width: 40.8%;
+    padding: 12px 20px;
+    border: 1px solid rgb(5, 142, 247);
+    margin: 14px;
+    border-radius: 4px;
+    font-size: 15px;
+} */
+.formdesign phonenumber{
+    width: 7%;
+    padding: 11px ;
+    margin: 14px;
+    border-radius: 4px;
+    border: 1px solid rgb(5, 142, 247);
+}
